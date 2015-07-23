@@ -1,0 +1,12 @@
+{
+  "name": "jaredjennings/ldap",
+  "version": "0.1.0",
+  "author": "Jared Jennings",
+  "summary": "Provide the functionality of the ldap module from CMITS (boilerplate)",
+  "license": "Apache-2.0",
+  "source": "https://github.com/jaredjennings/puppet-cmits-ldap",
+  "project_page": "https://github.com/jaredjennings/puppet-cmits-ldap",
+  "issues_url": "https://github.com/jaredjennings/puppet-cmits-ldap/issues",
+  "dependencies": []
+}
+
