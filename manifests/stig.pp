@@ -21,9 +21,9 @@ class ldap::stig {
 # \implements{unixsrg}{GEN008060,GEN008080,GEN008100}%
 # Control ownership and permissions of \verb!ldap.conf!.
     $ldap_conf = $::osfamily ? {
-        'redhat' => '/etc/ldap.conf',
-        'darwin' => '/etc/openldap/ldap.conf',
-        default  => unimplemented,
+        'RedHat' => '/etc/ldap.conf',
+        'Darwin' => '/etc/openldap/ldap.conf',
+        default  => fail("unimplemented on ${::osfamily}"),
     }
     file { $ldap_conf:
         owner => root, group => 0, mode => 0644,
