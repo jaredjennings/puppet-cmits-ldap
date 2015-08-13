@@ -26,7 +26,7 @@ class ldap::stig {
         default  => fail("unimplemented on ${::osfamily}"),
     }
     file { $ldap_conf:
-        owner => root, group => 0, mode => 0644,
+        owner => root, group => 0, mode => '0644',
     }
 
 # \implements{macosxstig}{GEN008120 M6}%
